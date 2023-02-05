@@ -20,13 +20,14 @@ function enviar () {
         }
 
     })) {
-        alert ('Esse número já se encontra na lista')
+        alert ('O número informado já se encontra na lista')
     }
     
     else {
         array.push(numero)
         div1.innerHTML += `O número ${numero} foi adicionado a lista <br>`
     }
+
 }
 
 function finalizar () {
@@ -61,12 +62,11 @@ function finalizar () {
 
         arrayM = arrayS / arrayL
 
-        div2.innerHTML = `Existem ${arrayL} números dentro da lista <br> 
-                        A soma entre todos os números da lista é igual a ${arrayS} <br>
-                        A média entre todos os números da lista é igual a ${arrayM} <br>
-                        O maior número na lista é igual a ${arrayMaior} <br>
-                        O menor número na lista é igual a ${arrayMenor}`
-
+        div2.innerHTML = `Existem ${arrayL} números dentro da lista <br>`
+        div2.innerHTML += `A soma entre todos os números da lista é igual a ${arrayS}<br>`
+        div2.innerHTML += `A média entre todos os números da lista é igual a ${arrayM}<br>`
+        div2.innerHTML += `O maior número na lista é igual a ${arrayMaior}<br>`
+        div2.innerHTML += `O menor número na lista é igual a ${arrayMenor}`
 
         
     }
